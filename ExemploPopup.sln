@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup.Android", "ExemploPopup\ExemploPopup.Android\ExemploPopup.Android.csproj", "{4855E970-E92E-4A6C-B7FE-D34FDDE97428}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup.Android", "ExemploPopup.Android\ExemploPopup.Android.csproj", "{4855E970-E92E-4A6C-B7FE-D34FDDE97428}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup.iOS", "ExemploPopup\ExemploPopup.iOS\ExemploPopup.iOS.csproj", "{695F16F2-CC66-4F5B-A61B-7EE59E074AF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup.iOS", "ExemploPopup.iOS\ExemploPopup.iOS.csproj", "{695F16F2-CC66-4F5B-A61B-7EE59E074AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup", "ExemploPopup\ExemploPopup\ExemploPopup.csproj", "{45260739-7ACF-4795-AF86-2F8D5ED5C09B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup", "ExemploPopup.csproj", "{45260739-7ACF-4795-AF86-2F8D5ED5C09B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
