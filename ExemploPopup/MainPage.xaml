@@ -5,10 +5,8 @@
              x:Class="ExemploPopup.MainPage">
 
     <StackLayout>
-        <Button Text="Abrir Modal de Cadastro" Clicked="AbrirPopUpCadastro"/>
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Button Text="Abrir Modal de cadastro" Clicked="AbrirPopUpCadastro"/>
+        <Button Text="Abrir Modal com comentário" Clicked="AbrirPopUpComentario"/>
     </StackLayout>
 
 </ContentPage>

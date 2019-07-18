@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup.Android", "Exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup.iOS", "ExemploPopup.iOS\ExemploPopup.iOS.csproj", "{695F16F2-CC66-4F5B-A61B-7EE59E074AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup", "ExemploPopup.csproj", "{45260739-7ACF-4795-AF86-2F8D5ED5C09B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploPopup", "ExemploPopup\ExemploPopup.csproj", "{45260739-7ACF-4795-AF86-2F8D5ED5C09B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

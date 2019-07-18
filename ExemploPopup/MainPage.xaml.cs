@@ -15,5 +15,9 @@ namespace ExemploPopup
         {
             await PopupNavigation.PushAsync(new PopupView());
         }
+        public async void AbrirPopUpComentario(object sender, EventArgs e)
+        {
+            await PopupNavigation.PushAsync(new PopupComentarioView());
+        }
     }
 }
