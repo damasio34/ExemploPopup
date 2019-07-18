@@ -73,7 +73,7 @@ namespace ExemploPopup
 
         private async void btnEnviar_Clicked(object sender, EventArgs e)
         {
-            await PopupNavigation.Instance.PopAllAsync();
+            PopupNavigation.Instance.PopAllAsync();
             await PopupNavigation.PushAsync(new PopupFeedbackView());
         }
     }

@@ -21,7 +21,7 @@ namespace ExemploPopup
             button.BackgroundColor = Color.FromHex("#40c18f");
             button.TextColor = Color.White;
 
-            await PopupNavigation.Instance.PopAllAsync();
+            PopupNavigation.Instance.PopAllAsync();
             await PopupNavigation.PushAsync(new PopupComentarioView(score));
         }
 
