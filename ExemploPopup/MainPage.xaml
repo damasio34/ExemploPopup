@@ -7,6 +7,7 @@
     <StackLayout>
         <Button Text="Abrir Modal de cadastro" Clicked="AbrirPopUpCadastro"/>
         <Button Text="Abrir Modal com comentário" Clicked="AbrirPopUpComentario"/>
+        <Button Text="Abrir Modal de feedback" Clicked="AbrirPopUpFeedback"/>
     </StackLayout>
 
 </ContentPage>

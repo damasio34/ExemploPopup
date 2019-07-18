@@ -50,7 +50,7 @@
                 <Editor Margin="0,20,0,0" VerticalOptions="FillAndExpand" Keyboard="Chat"/>
             </StackLayout>
             <StackLayout Grid.Row="2" Margin="0,0,0,20">
-                <Button Text="Enviar" BackgroundColor="Green" TextColor="White" BorderRadius="6" />
+                <Button Text="Enviar" BackgroundColor="Green" TextColor="White" BorderRadius="6" Clicked="btnEnviar_Clicked" />
             </StackLayout>
         </Grid>
     </StackLayout>

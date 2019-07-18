@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ExemploPopup.PopupFeedbackView">
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+
+        <Frame CornerRadius="8" BackgroundColor="White" Margin="20" Padding="40">
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                <StackLayout>
+                    <Label HorizontalOptions="Center" Text="Avaliação enviada." TextColor="#222" FontSize="Large" FontAttributes="Bold" Margin="0,0,0,20" />
+                    <Label HorizontalOptions="CenterAndExpand" Text="Obrigado. Nós realmente" FontSize="Large" />
+                    <Label HorizontalOptions="CenterAndExpand" Text="apreciamos seu feedback." FontSize="Large" Margin="0,-10,0,20" />
+                </StackLayout>
+                <StackLayout>
+                    <Button Text="Continuar" BackgroundColor="Green" TextColor="White" BorderRadius="6" Clicked="btnContinuar_Clicked" />
+                </StackLayout>
+            </StackLayout>
+
+        </Frame>
+    </StackLayout>
+
+</pages:PopupPage>

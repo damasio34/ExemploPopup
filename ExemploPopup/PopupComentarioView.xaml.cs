@@ -68,7 +68,13 @@ namespace ExemploPopup
 
         private void btnClose_Clicked(object sender, EventArgs e)
         {
-            PopupNavigation.Instance.PopAsync();
+            PopupNavigation.Instance.PopAllAsync();
+        }
+
+        private async void btnEnviar_Clicked(object sender, EventArgs e)
+        {
+            await PopupNavigation.Instance.PopAllAsync();
+            await PopupNavigation.PushAsync(new PopupFeedbackView());
         }
     }
 }

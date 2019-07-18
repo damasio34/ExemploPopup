@@ -20,6 +20,8 @@ namespace ExemploPopup
 
             button.BackgroundColor = Color.Green;
             button.TextColor = Color.White;
+
+            await PopupNavigation.Instance.PopAllAsync();
             await PopupNavigation.PushAsync(new PopupComentarioView(score));
         }
 
@@ -36,7 +38,7 @@ namespace ExemploPopup
 
         private void btnClose_Clicked(object sender, EventArgs e)
         {
-            PopupNavigation.Instance.PopAsync();
+            PopupNavigation.Instance.PopAllAsync();
         }
     }
 }

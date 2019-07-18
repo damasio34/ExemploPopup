@@ -18,6 +18,9 @@
     <Compile Update="PopupComentarioView.xaml.cs">
       <DependentUpon>PopupComentarioView.xaml</DependentUpon>
     </Compile>
+    <Compile Update="PopupFeedbackView.xaml.cs">
+      <DependentUpon>PopupFeedbackView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
