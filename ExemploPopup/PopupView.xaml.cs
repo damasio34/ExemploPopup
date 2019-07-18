@@ -18,7 +18,7 @@ namespace ExemploPopup
         {
             var button = (Button)sender;
 
-            button.BackgroundColor = Color.Green;
+            button.BackgroundColor = Color.FromHex("#40c18f");
             button.TextColor = Color.White;
 
             await PopupNavigation.Instance.PopAllAsync();

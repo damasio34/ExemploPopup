@@ -50,7 +50,7 @@ namespace ExemploPopup
 
             var button = (Button)sender;
 
-            button.BackgroundColor = Color.Green;
+            button.BackgroundColor = Color.FromHex("#40c18f");
             button.TextColor = Color.White;
             if (score != 0) this.lblNota.Text = $"Por que você escolheu {score}?";
         }

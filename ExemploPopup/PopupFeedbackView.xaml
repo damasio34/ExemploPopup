@@ -16,7 +16,7 @@
                     <Label HorizontalOptions="CenterAndExpand" Text="apreciamos seu feedback." FontSize="Large" Margin="0,-10,0,20" />
                 </StackLayout>
                 <StackLayout>
-                    <Button Text="Continuar" BackgroundColor="Green" TextColor="White" BorderRadius="6" Clicked="btnContinuar_Clicked" />
+                    <Button Text="Continuar" BackgroundColor="#40c18f" TextColor="White" BorderRadius="6" Clicked="btnContinuar_Clicked" />
                 </StackLayout>
             </StackLayout>
 
