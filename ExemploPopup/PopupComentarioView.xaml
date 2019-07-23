@@ -45,9 +45,9 @@
                     <Button x:Name="button_10" Padding="-10" Text="10" FontSize="Default" HeightRequest="32" WidthRequest="32" BorderRadius="16" HorizontalOptions="Center" VerticalOptions="Center" TextColor="DarkGray" BorderColor="DarkGray" BorderWidth="1" BackgroundColor="White" Clicked="Button10_Clicked" />
                 </StackLayout>
             </StackLayout>
-            <StackLayout Grid.Row="1" Margin="0,40,0,30">
-                <Label x:Name="lblNota" FontSize="Medium" />
-                <Editor Margin="0,20,0,0" VerticalOptions="FillAndExpand" Keyboard="Chat"/>
+            <StackLayout Grid.Row="1" Margin="0,40,0,30" BackgroundColor="White">
+                <Label x:Name="lblNota" FontSize="Medium"/>
+                <Editor x:Name="edtComentario" Margin="0,20,0,0" VerticalOptions="FillAndExpand" Keyboard="Chat"/>
             </StackLayout>
             <StackLayout Grid.Row="2" Margin="0,0,0,20">
                 <Button Text="Enviar" BackgroundColor="#40c18f" TextColor="White" BorderRadius="6" Clicked="btnEnviar_Clicked" />

@@ -1,4 +1,6 @@
 ﻿
+using ExemploPopup.Delighted;
+using ExemploPopup.Delighted.Models;
 using Rg.Plugins.Popup.Services;
 using System;
 using System.Linq;
@@ -10,7 +12,10 @@ namespace ExemploPopup
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PopupComentarioView : Rg.Plugins.Popup.Pages.PopupPage
 	{
-		public PopupComentarioView(int score) : this()
+        private int _score;
+        private string _personID;
+
+        public PopupComentarioView(int score) : this()
 		{
             PrintButton(score);
         }
@@ -37,6 +42,7 @@ namespace ExemploPopup
                 default: return;
             }
 
+            this._score = score;
             this.lblNota.Text = $"Por que você escolheu {score}?";
         }
 
@@ -52,7 +58,11 @@ namespace ExemploPopup
 
             button.BackgroundColor = Color.FromHex("#40c18f");
             button.TextColor = Color.White;
-            if (score != 0) this.lblNota.Text = $"Por que você escolheu {score}?";
+            if (score != 0)
+            {
+                this._score = score;
+                this.lblNota.Text = $"Por que você escolheu {score}?";                
+            }
         }
 
         private void Button1_Clicked(object sender, EventArgs e) => ChangeOnClick(sender, 1);
@@ -73,6 +83,21 @@ namespace ExemploPopup
 
         private async void btnEnviar_Clicked(object sender, EventArgs e)
         {
+            var people = new People
+            {
+                Name = "Darlan Silva 2",
+                Email = "darlan.silva@toroinvestimentos.com.br"
+            };
+            people = await RestService.CreateOrUpdatePerson(people);
+
+            var survei = new SurveiResponse
+            {
+                Comment = this.edtComentario.Text,
+                Score = this._score,
+                Person = people.ID
+            };
+            await RestService.SendSurvei(survei);
+
             PopupNavigation.Instance.PopAllAsync();
             await PopupNavigation.PushAsync(new PopupFeedbackView());
         }
